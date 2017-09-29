@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app/bin/www"
+  },
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
