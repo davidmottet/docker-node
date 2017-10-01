@@ -1,9 +1,13 @@
-var http = require('http');
+const express = require('express')
+const app = express()
 
-var app = http.createServer(function(req, res) {
-	res.writeHead(200);
-	res.end('Salut tout le monde !');
-});
-app.listen(80);
+app.get('/', function (_req, _res) {
+	_res.send('Hello World!')
+})
+
+app.listen(80, function () {
+	console.log('Example app listening on port 80!')
+})
+
 
 module.exports = app;
